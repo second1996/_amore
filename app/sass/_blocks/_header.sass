@@ -1,0 +1,56 @@
+.header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 2
+	padding: 25px 0
+	border-bottom: 1px solid #7e7e7e
+	&__menu
+		display: flex
+		align-items: center
+		&:hover
+			cursor: pointer
+			.header__menu-icon
+				> span:nth-child(2)
+					width: 100%
+			.header__menu-title
+				color: $light-accent
+		&-icon
+			> span
+				display: block
+				width: 26px
+				height: 1px
+				background: $light-accent
+				transition: width 0.35s ease
+				&:nth-child(2)
+					width: 20px
+					margin-top: 6px
+				&:nth-child(3)
+					margin-top: 6px
+		&-title
+			margin-top: 2px
+			margin-left: 10px
+			color: $white
+			font-weight: 500
+			text-transform: uppercase
+			line-height: 1
+			transition: color 0.35s ease
+	&__callback
+		display: flex
+		align-items: center
+		.callback
+			&__icon
+				margin-right: 10px
+				.icon
+					// width: 28px
+					// height: 28px
+					font-size: 28px
+					fill: $light-accent
+			&__phone
+				display: flex
+				flex-direction: column
+				> a
+					color: $white
+					&:hover
+						color: $light-accent
