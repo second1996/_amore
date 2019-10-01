@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-
 	<meta charset="utf-8">
 
 	<title>OptimizedHTML 5</title>
@@ -13,33 +11,46 @@
 	<link rel="icon" href="img/favicon.png">
 	<meta property="og:image" content="img/@1x/preview.jpg">
 	
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.min.css">
-
 </head>
-
 <body>
 
-	<!-- Custom HTML / Remove before use -->
-
-	<div class="container">
-
-		<div class="parent"> <!-- Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/ -->
-			<img class="lazy img-responsive example-img"
-			src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-			data-src="img/@1x/preview.jpg"
-			data-srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x"
-			alt="Start HTML5 Template">
+	<section class="heroes" style="background-image: url('img/@2x/heroes-image.jpg');">
+		<header class="heroes__header header">
+			<div class="container">
+				<div class="row">
+					<div class="col-auto">
+						<div class="header__menu">
+							<span></span>
+						</div>
+					</div>
+					<div class="col-auto">
+						<a href="" title="Головна сторінка Amore">
+							<img src="img/logo.png" alt="Amore – Event agency">
+						</a>
+					</div>
+					<div class="col-auto">
+						<div class="header__callback callback">
+							<div class="callback__icon">icon</div>
+							<div class="callback__phone">
+								<a href="tel:">+38 (097) 90 66 449</a>
+								<a href="tel:">+38 (097) 90 66 449</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="heroes__inner">
+			<div class="container">
+				<p class="heroes__suptitle">Бажаєш свято як в кращих фільмах? – Тобі до нас!</p>
+				<h1 class="heroes__title">Ми зробимо більше, <span>ніж ви очікуєте!</span></h1>
+				<a href="#" class="heroes__btn btn btn-primary">Залишити заявку</a>
+			</div>
 		</div>
-		<br>
-		<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. <em>Ad distinctio animi</em>, dolorum eaque praesentium unde aliquid, mollitia itaque voluptate quos modi et incidunt tempora fugiat voluptatum quia esse dolor repellat.</p>
-		<br>
-		<div class="example-grid">
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quo vero molestias, esse doloribus corrupti, nemo minus ullam tempore tenetur magni aut quos soluta sit adipisci eius expedita amet non.</div>
-			<div>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
-		</div>
-
-	</div>
+	</section>
 
 	<script src="js/scripts.min.js"></script>
 
