@@ -1,2 +1,28 @@
 .steps
-  margin-top: 150px
+	margin-top: 125px
+	&__wrap
+		margin-top: 125px
+		[class*="col"]:last-child
+			.steps__item:after
+				display: none
+	&__item
+		position: relative
+		text-align: center
+		&:after
+			content: ''
+			position: absolute
+			top: 50px
+			left: 100%
+			margin-left: -20px
+			display: block
+			width: 70px
+			height: 1px
+			background: $accent
+	&__icon
+		margin-bottom: 15px
+		.icon
+			color: $accent
+			font-size: 64px
+	&__title
+		margin-bottom: 0
+		font-size: 20px
