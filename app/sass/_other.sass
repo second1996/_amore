@@ -1,0 +1,91 @@
+.section
+	position: relative
+	padding: 75px 0
+
+.background-text
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: -1
+	margin-right: -132px
+	color: #f5f5f5
+	font-size: 240px
+	font-weight: 800
+	line-height: 0.95
+	letter-spacing: 132px
+	text-align: center
+	text-transform: uppercase
+	&_smaller
+		margin-left: -60px
+		color: $white
+		font-size: 200px
+		letter-spacing: 70px
+
+.section-title
+	color: $text
+	font-size: 46px
+	font-weight: 700
+	text-align: center
+
+.btn
+	position: relative
+	overflow: hidden
+	display: inline-block
+	padding: 16px 22px
+	border: 1px solid $text
+	background: $trsp
+	color: $text
+	font-size: 14px
+	text-align: center
+	text-transform: uppercase
+	line-height: 1
+	outline: 0
+	transition: $trs-all
+	&:before
+		position: absolute
+		z-index: 1
+		transition: .3s
+		content: ''
+		width: 0
+		left: auto
+		right: 0
+		bottom: 0
+		height: 100%
+		background: $text
+	&:hover
+		color: $white
+		text-decoration: none
+		&:before
+			z-index: -1
+			width: 100%
+			left: 0
+	&:active
+		box-shadow: 0 0 0 3px rgba($text, 0.25)
+		border-color: darken($text, 5%)
+		color: $white
+		&:before
+			background: darken($text, 5%)
+	&-primary
+		border-color: $light-accent
+		color: $light-accent
+		&:before
+			background: $light-accent
+		&:hover
+			color: $text
+		&:active
+			box-shadow: 0 0 0 3px rgba($light-accent, 0.25)
+			border-color: darken($light-accent, 5%)
+			&:before
+				background: darken($light-accent, 5%)
+
+.icon
+	display: inline-block
+	width: 1em
+	height: 1em
+	stroke-width: 0
+	stroke: currentColor
+	fill: currentColor
+
+.accent-text
+	color: $accent

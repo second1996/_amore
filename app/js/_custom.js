@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-	// Custom JS
+	var mixer = mixitup('.gallery__container', {
+		load: {
+			filter: '.category-1'
+		}
+	});
 
 });
