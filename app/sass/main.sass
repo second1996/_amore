@@ -44,6 +44,7 @@ body
 	top: 0
 	left: 0
 	right: 0
+	z-index: -1
 	margin-right: -132px
 	color: #f5f5f5
 	font-size: 240px
@@ -52,6 +53,17 @@ body
 	letter-spacing: 132px
 	text-align: center
 	text-transform: uppercase
+	&_smaller
+		margin-left: -60px
+		color: $white
+		font-size: 200px
+		letter-spacing: 70px
+
+.section-title
+	color: $text
+	font-size: 46px
+	font-weight: 700
+	text-align: center
 
 .btn
 	position: relative
@@ -121,6 +133,10 @@ body
 @import "_blocks/header"
 @import "_blocks/heroes"
 @import "_blocks/about-us"
+@import "_blocks/advantages"
+@import "_blocks/services"
+@import "_blocks/cta"
+@import "_blocks/steps"
 
 
 
