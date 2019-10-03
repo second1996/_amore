@@ -1,0 +1,70 @@
+.modal
+	&-content
+		padding: 40px 50px
+		border-radius: 0
+	&-header
+		display: flex
+		align-items: center
+		margin-bottom: 60px
+		padding: 0
+		border-bottom: 0
+		.close
+			height: 30px
+			width: 30px
+			margin-right: -4px
+			padding: 0
+			border: 0
+			background: $trsp
+			outline: 0 !important
+			transition: $trs-all
+			&:hover
+				cursor: pointer
+				transform: translateY(4px)
+				> span
+					background: $light-accent
+					height: 26px
+			> span
+				display: inline-block
+				width: 1px
+				height: 30px
+				background: $text
+				transition: $trs-all
+				will-change: transform
+				&:nth-child(1)
+					transform: rotate(-45deg) translate(2px,2px)
+				&:nth-child(2)
+					transform: rotate(45deg) translate(-2px,2px)
+	&-title
+		color: $text
+		font-size: 20px
+		font-weight: 400
+	&-body
+		padding: 0
+
+// Form in modal
+.form
+	&-group
+		position: relative
+		margin-bottom: 50px
+		> label
+			position: absolute
+			top: 5px
+			left: 25px
+			color: #7c7c7c
+			font-size: 14px
+			font-weight: 300
+			transition: $trs-all
+			cursor: pointer
+	&-control
+		width: 100%
+		padding: 5px 10px
+		border: 0
+		border-bottom: 1px solid #c9c9c9
+		&:focus ~ label,
+		&:valid ~ label
+			top: -25px
+			left: 10px
+	&-button
+		padding-left: 50px
+		padding-right: 50px
+

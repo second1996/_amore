@@ -45,6 +45,8 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
+		'node_modules/bootstrap/js/bootstrap.min.js', // Bootstrap Modal
+		// 'node_modules/bootstrap/js/dist/popover.js', // Bootstrap Popover
 		'app/js/_libs.js', // JS libraries (all in one)
 		'app/js/_custom.js', // Custom scripts. Always at the end
 		])

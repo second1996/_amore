@@ -24,6 +24,9 @@ body
 	font-family: 'Raleway', sans-serif
 	font-size: 16px
 	line-height: 1.5
+	&.modal-open
+		.header
+			margin-right: 17px
 	a:link
 		color: $text
 		transition: $trs-all
@@ -48,9 +51,11 @@ body
 @import "_blocks/steps"
 @import "_blocks/gallery"
 @import "_blocks/footer"
-
-
-
+@import "_blocks/mobile-nav"
+@import "_blocks/callback-form"
 
 .parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
 	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+
+// Media queries
+@import "media"

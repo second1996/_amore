@@ -56,7 +56,7 @@
 			<div class="container">
 				<p class="heroes__suptitle">Бажаєш свято як в кращих фільмах? – Тобі до нас!</p>
 				<h1 class="heroes__title">Ми зробимо більше, <span>ніж ви очікуєте!</span></h1>
-				<a href="#" class="heroes__btn btn btn-primary">Залишити заявку</a>
+				<button data-toggle="modal" data-target="#callback-modal" class="heroes__btn btn btn-primary">Залишити заявку</button>
 			</div>
 		</div>
 		<div class="heroes__footer links">
@@ -90,7 +90,7 @@
 						<p>Amore є для нас не просто назвою – це те, на чому базується уся наша робота. Ми любимо наших клієнтів, справу, яку ми робимо і наші проекти. Головна наша мета - закохати вас в нашу агенцію та свято, яке ми для вас організуємо. І як показує досвід, нам це вдається з першого погляду.</p>
 						<p>Поки ви будете насолоджуватись коханням, ми швидко, відповідально і якісно втілимо усі ваші мрії в ідеальне свято. Ми гарантуємо, що зробимо все якнайкраще, адже Amore існує для  того, щоб дарувати вам щастя.</p>
 					</div>
-					<a href="#" class="about-us__btn btn">Наші послуги</a>
+					<a href="#services" data-link="anchor" class="about-us__btn btn">Наші послуги</a>
 				</div>
 				<div class="col-auto">
 					<div class="about-us__photo photo">
@@ -186,7 +186,7 @@
 	</section>
 
 	<!-- Section: Services -->
-	<section class="services section">
+	<section class="services section" id="services">
 		<div class="background-text background-text_smaller">Services</div>
 		<div class="container">
 			<h2 class="section-title">Наші послуги</h2>
@@ -266,7 +266,7 @@
 		<div class="container">
 			<h5 class="cta__title">Реалізуємо вашу ідею <br><b>в неповторну подію</b></h5>
 			<div class="cta__btn">
-				<a href="#" class="btn">Залишити заявку</a>
+				<button data-toggle="modal" data-target="#callback-modal" class="btn">Залишити заявку</button>
 			</div>
 		</div>
 		<div class="cta__body ltr"></div>
@@ -469,7 +469,7 @@
 		<div class="container">
 			<h5 class="cta__title">Ми зробимо більше, <br><b>ніж ви очікуєте!</b></h5>
 			<div class="cta__btn">
-				<a href="#" class="btn">Залишити заявку</a>
+				<button data-toggle="modal" data-target="#callback-modal" class="btn">Залишити заявку</button>
 			</div>
 		</div>
 		<div class="cta__body rtl"></div>
@@ -480,7 +480,7 @@
 		<div class="container">
 			<div class="row justify-content-between align-items-center">
 				<div class="col">
-					<span class="footer__copyright">Amore 2019. &copy; Всі права захищені.</span>
+					<span class="footer__copyright">Amore 2019 &copy; Всі права захищені.</span>
 				</div>
 				<div class="col">
 					<div class="footer__logo">
@@ -499,6 +499,79 @@
 	</footer>
 
 	<script src="js/scripts.min.js"></script>
+
+	<div class="mobile-nav nav">
+		<div class="container">
+			<button class="mobile-nav__close">
+				<span></span>
+				<span></span>
+			</button>
+			<div class="row">
+				<div class="col nav__left">
+					<ul class="nav__list">
+						<li><a href="#">Головна</a></li>
+						<li><a href="#">Про нас</a></li>
+						<li><a href="#">Переваги</a></li>
+						<li><a href="#">Послуги</a></li>
+						<li><a href="#">Фотогалерея</a></li>
+					</ul>
+				</div>
+				<div class="col nav__right">
+					<ul class="nav__list">
+						<li><a href="#">Організація весіль</a></li>
+						<li><a href="#">Оренда декору</a></li>
+					</ul>
+					<ul class="nav__social">
+						<li>
+							<a href="https://facebook.com/">
+								<svg class="icon icon-facebook"><use xlink:href="img/icons/sprite.svg#icon-facebook"></use></svg>
+								<span>/amorewedding.com.ua</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://instagram.com/">
+								<svg class="icon icon-instagram"><use xlink:href="img/icons/sprite.svg#icon-instagram"></use></svg>
+								<span>/amorewed.agency</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-nav__overlay"></div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="callback-modal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="callbackModalLabel">Залишити заявку</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="#" class="callback-form form">
+						<div class="form-group">
+							<input class="form-control" type="text" name="callback-name" id="callback-name" required>
+							<label for="callback-name">Ваше ім'я</label>
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="text" name="callback-phone" id="callback-phone" required>
+							<label for="callback-phone">Номер телефону</label>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" name="callback-message" id="callback-message" rows="6" required></textarea>
+							<label for="callback-message">Коментар</label>
+						</div>
+						<button class="form-button btn" type="submit">Надіслати</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>

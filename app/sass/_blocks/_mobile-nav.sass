@@ -1,0 +1,99 @@
+.mobile-nav
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 99
+	width: 100vw
+	height: 100vh
+	display: flex
+	align-items: center
+	visibility: hidden
+	opacity: 0
+	transition: opacity 0.5s ease
+	&.is-active
+		visibility: visible
+		opacity: 1
+	.container
+		position: relative
+	&__close
+		position: absolute
+		top: -125px
+		right: 16px
+		height: 30px
+		width: 30px
+		padding: 0
+		border: 0
+		background: $trsp
+		outline: 0 !important
+		transition: $trs-all
+		&:hover
+			cursor: pointer
+			transform: translateY(4px)
+			> span
+				background: $light-accent
+				height: 26px
+		> span
+			display: inline-block
+			width: 2px
+			height: 30px
+			background: $white
+			transition: $trs-all
+			will-change: transform
+			&:nth-child(1)
+				transform: rotate(-45deg) translate(2px,2px)
+			&:nth-child(2)
+				transform: rotate(45deg) translate(-2px,2px)
+	.nav
+		&__left
+			text-align: left
+		&__right
+			text-align: right
+		&__list
+			list-style: none
+			margin: 0
+			padding: 0
+			> li
+				> a
+					color: $white
+					font-size: 36px
+					font-weight: 700
+					line-height: 2
+					&:hover
+						color: $light-accent
+		&__social
+			margin: 0
+			padding: 0
+			list-style: none
+			> li
+				display: block
+				margin-top: 25px
+				line-height: 2
+				> a
+					display: inline-block
+					&:hover
+						> span
+							color: $light-accent
+					.icon
+						fill: $light-accent
+						font-size: 30px
+					> span
+						display: inline-block
+						vertical-align: top
+						color: $white
+						font-size: 20px
+						font-weight: 400
+						transition: color 0.35s ease
+	&__overlay
+		position: absolute
+		z-index: -1
+		width: 100vw
+		height: 100vh
+		background: rgba(0,0,0, 0.85)
+		visibility: hidden
+		opacity: 0
+		transition: $trs-all
+		&.is-active
+			visibility: visible
+			opacity: 1
