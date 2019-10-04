@@ -62,9 +62,9 @@
 		bottom: 0
 		padding: 30px
 		background: $white
+		will-change: transform
 		transform: translateY(52px)
 		transition: transform 0.35s ease
-		will-change: transform
 	&__title
 		color: $text
 		font-size: 18px
@@ -86,11 +86,12 @@
 			vertical-align: middle
 			width: 20px
 			height: 1px
+			margin-top: -3px
 			margin-right: 10px
 			background: $accent
 			transition: $trs-all
 		&:hover
 			color: $text
 			&:before
-				width: 30px
+				width: 28px
 				background: $text
