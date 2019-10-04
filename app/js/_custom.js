@@ -82,10 +82,10 @@ jQuery(function() {
 				return;
 			
 			if (st > lastScrollTop && st > navbarHeight){
-				$('.header').removeClass('header-hide').addClass('header-show');
+				$('.header').removeClass('header-show').addClass('header-hide');
 			} else {
 				if(st + $(window).height() < $(document).height()) {
-					$('.header').removeClass('header-show').addClass('header-hide');
+					$('.header').removeClass('header-hide').addClass('header-show');
 				}
 			}
 			
