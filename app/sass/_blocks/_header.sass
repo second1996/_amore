@@ -1,5 +1,5 @@
 .header
-	position: fixed
+	position: absolute
 	top: 0
 	left: 0
 	right: 0
@@ -13,6 +13,7 @@
 	&.header-hide
 		transform: translateY(-110px)
 	&.header-light
+		position: fixed
 		background: $white
 		border-bottom-color: $trsp
 		box-shadow: 0 0 10px rgba(0,0,0, 0.1)
@@ -82,5 +83,10 @@
 				flex-direction: column
 				> a
 					color: $white
+					white-space: nowrap
 					&:hover
 						color: $light-accent
+				&.is-active
+					transform: translateY(20px)
+					visibility: visible
+					opacity: 1

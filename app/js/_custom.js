@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 jQuery(function() {
 
-  // Anchors Links
-  $('a[data-link^="anchor"]').bind('click.smoothscroll', function(){
-    var target = $(this).attr('href'),
-        bl_top = $(target).offset().top - 0;
-    $('body, html').animate({scrollTop: bl_top}, 1000);
-    return false;
+	// Anchors Links
+	$('a[data-link^="anchor"]').bind('click.smoothscroll', function(){
+		var target = $(this).attr('href'),
+				bl_top = $(target).offset().top - 0;
+		$('body, html').animate({scrollTop: bl_top}, 1000);
+		return false;
 	});
 
 	// Phone mask for input[type="tel"]
@@ -23,6 +23,8 @@ jQuery(function() {
 
 	// Mobile menu
 	$hMenu = $('.header__menu');
+	$hPhone = $('.callback__icon');
+	$hPhoneNum = $('.callback__phone');
 	$mNav = $('.mobile-nav');
 	$mNavClose = $('.mobile-nav__close');
 	$mNavOverlay = $('.mobile-nav__overlay');
@@ -39,17 +41,29 @@ jQuery(function() {
 		$mNavOverlay.removeClass('is-active');
 	});
 
+	// Show phone numbers
+	if(window.matchMedia('(max-width: 767.98px)').matches) {
+		$hPhone.on('click', function() {
+			if ($hPhoneNum.hasClass('is-active')) {
+				$hPhoneNum.removeClass('is-active');
+			} else {
+				$hPhoneNum.addClass('is-active');
+			}
+		});
+	};
+
 	// Hide Header when scrolling down
 	$(window).scroll(function(){
-		if($(window).scrollTop() >= 150){
+		if($(window).scrollTop() >= 110){
 			$(".header").addClass('header-light');
+			$hPhoneNum.removeClass('is-active');
 		}
 		else {
 			$(".header").removeClass('header-light');
 		}
 	});
-	$(document).ready(function(){
-		if($(window).scrollTop() >= 150){
+	$('document').ready(function(){
+		if($(window).scrollTop() >= 110){
 			$(".header").addClass('header-light');
 		}
 		else {

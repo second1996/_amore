@@ -7,6 +7,7 @@
 	z-index: 99
 	width: 100vw
 	height: 100vh
+	min-height: 700px
 	display: flex
 	align-items: center
 	visibility: hidden
@@ -18,9 +19,9 @@
 	.container
 		position: relative
 	&__close
-		position: absolute
-		top: -125px
-		right: 16px
+		position: fixed
+		top: 30px
+		right: 30px
 		height: 30px
 		width: 30px
 		padding: 0
@@ -55,6 +56,7 @@
 			margin: 0
 			padding: 0
 			> li
+				white-space: nowrap
 				> a
 					color: $white
 					font-size: 36px
@@ -70,6 +72,7 @@
 				display: block
 				margin-top: 25px
 				line-height: 2
+				white-space: nowrap
 				> a
 					display: inline-block
 					&:hover
@@ -86,10 +89,15 @@
 						font-weight: 400
 						transition: color 0.35s ease
 	&__overlay
-		position: absolute
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
 		z-index: -1
 		width: 100vw
 		height: 100vh
+		min-height: 700px
 		background: rgba(0,0,0, 0.85)
 		visibility: hidden
 		opacity: 0
