@@ -1,15 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-	var mixer = mixitup('.gallery__container', {
-		load: {
-			filter: '.category-1'
-		}
-	});
+	// Mixitup init
+	if (document.querySelector(".gallery__container")) {
+		var mixer = mixitup('.gallery__container', {
+			load: {
+				filter: '.category-1'
+			}
+		});
+	}
 
 });
 
 jQuery(function() {
 
+	// Service Modal init
 	$('#serviceModal').on('show.bs.modal', function (event) {
 		var link = $(event.relatedTarget) // Button that triggered the modal
 		var sContent = link.data('content') // Extract info from data-* attributes
@@ -117,6 +121,14 @@ jQuery(function() {
 			
 			lastScrollTop = st;
 		}
+	});
+
+	// Gallery Mixitup
+	$('.gallery')
+
+	// Wedding Gallery Masonry
+	$('.w-gallery__grid').masonry({
+		itemSelector: '.w-gallery__grid-item'
 	});
 
 });
