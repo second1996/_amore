@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
 	<meta charset="utf-8">
 
@@ -212,7 +212,7 @@
 						<div class="services__meta">
 							<h3 class="services__title">Дні народження</h3>
 							<p class="services__descr">Як зробити день народження незабутнім?</p>
-							<a href="" class="services__link">Детальніше</a>
+							<div class="services__link" data-toggle="modal" data-target="#serviceModal" data-title="Дні народження" data-content='<font color="red">sad</font>'>Детальніше</div>
 						</div>
 					</div>
 				</div>
@@ -223,7 +223,7 @@
 						<div class="services__meta">
 							<h3 class="services__title">Тімбілдинг & Корпоратив</h3>
 							<p class="services__descr">Корпоративна вечірка? Це може здаватись важкою задачею, але не для нас.</p>
-							<a href="" class="services__link">Детальніше</a>
+							<div class="services__link" data-toggle="modal" data-target="#serviceModal" data-title="Тімбілдинг & Корпоратив" data-content="<font color='red'>sad</font>">Детальніше</div>
 						</div>
 					</div>
 				</div>
@@ -234,7 +234,7 @@
 						<div class="services__meta">
 							<h3 class="services__title">Тематичні вечірки</h3>
 							<p class="services__descr">Весілля як у кіно чи класична церемонія?</p>
-							<a href="" class="services__link">Детальніше</a>
+							<div class="services__link" data-toggle="modal" data-target="#serviceModal" data-title="Тематичні вечірки" data-content="<font color='red'>sad</font>">Детальніше</div>
 						</div>
 					</div>
 				</div>
@@ -245,7 +245,7 @@
 						<div class="services__meta">
 							<h3 class="services__title">Бізнес-події</h3>
 							<p class="services__descr">Плануєте бізнес-подію? Ми вам допоможемо.</p>
-							<a href="" class="services__link">Детальніше</a>
+							<div class="services__link" data-toggle="modal" data-target="#serviceModal" data-title="Бізнес-події" data-content="<font color='red'>sad</font>">Детальніше</div>
 						</div>
 					</div>
 				</div>
@@ -256,7 +256,7 @@
 						<div class="services__meta">
 							<h3 class="services__title">Конференції</h3>
 							<p class="services__descr">Як організувати конференцію на високому рівні?</p>
-							<a href="" class="services__link">Детальніше</a>
+							<div class="services__link" data-toggle="modal" data-target="#serviceModal" data-title="Конференції" data-content="<font color='red'>sad</font>">Детальніше</div>
 						</div>
 					</div>
 				</div>
@@ -544,7 +544,7 @@
 		<div class="mobile-nav__overlay"></div>
 	</div>
 
-	<!-- Modal -->
+	<!-- Modal: Callback -->
 	<div class="modal fade" id="callback-modal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
@@ -571,6 +571,24 @@
 						</div>
 						<button class="form-button btn" type="submit">Надіслати</button>
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal: Service -->
+	<div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="serviceModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="serviceModalLabel">Послуга</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div id="recipient-name"></div>
 				</div>
 			</div>
 		</div>

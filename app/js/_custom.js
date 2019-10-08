@@ -10,6 +10,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 jQuery(function() {
 
+	$('#serviceModal').on('show.bs.modal', function (event) {
+		var link = $(event.relatedTarget) // Button that triggered the modal
+		var sContent = link.data('content') // Extract info from data-* attributes
+		var sTitle = link.data('title') // Extract info from data-* attributes
+		// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+		// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+		var modal = $(this)
+		modal.find('.modal-title').text(sTitle)
+		modal.find('.modal-body').html(sContent)
+		// return false;
+	})
+
 	// Anchors Links
 	$('a[data-link^="anchor"]').bind('click.smoothscroll', function(){
 		var target = $(this).attr('href'),

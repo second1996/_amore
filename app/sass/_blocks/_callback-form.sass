@@ -43,13 +43,18 @@
 
 // Form in modal
 .form
-	&-group
+	& .form-group
 		position: relative
 		margin-bottom: 50px
 		> label
 			position: absolute
-			top: 5px
-			left: 25px
+			top: 0
+			left: 0
+			right: 0
+			width: 100%
+			padding-top: 5px
+			padding-left: 25px
+			padding-bottom: 15px
 			color: #7c7c7c
 			font-size: 14px
 			font-weight: 300
@@ -63,7 +68,7 @@
 		&:focus ~ label,
 		&:valid ~ label
 			top: -25px
-			left: 10px
+			left: -15px
 	&-button
 		padding-left: 50px
 		padding-right: 50px
