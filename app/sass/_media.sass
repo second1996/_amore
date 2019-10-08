@@ -1,4 +1,4 @@
-// @import "vars"
+@import "vars"
 
 // /*==========  Desktop First  ==========*/
 
@@ -19,6 +19,8 @@
 	.gallery
 		&__item
 			height: 200px
+
+
 
 // ≥768px
 +media-breakpoint-down(md)
@@ -59,6 +61,24 @@
 	.cta
 		&__title
 			font-size: 46px
+	// PAGE WEDDING CUSTOMIZE
+	// Advantages
+	body.page-wedding
+		.w-advantages
+			&__title
+				> span
+					font-size: 40px
+			&__item
+				padding: 20px 25px
+			&__text
+				font-size: 16px
+		// Section: Services
+		.w-services
+			&:before
+				top: -80px
+				border-bottom-width: 80px
+
+
 
 // ≥576px
 +media-breakpoint-down(sm)
@@ -126,6 +146,18 @@
 			height: 350px
 		&__title
 			font-size: 38px
+	// PAGE WEDDING CUSTOMIZE
+	body.page-wedding
+		// Section: Heroes
+		.heroes
+			&__descr
+				font-size: 16px
+		// Section: Services
+		.w-services
+			&__item
+				padding: 30px 15px
+
+
 
 // ≥0px
 +media-breakpoint-down(xs)
@@ -180,6 +212,19 @@
 				margin-bottom: 5px
 			> a
 				margin-left: 0
+	// PAGE WEDDING CUSTOMIZE
+	body.page-wedding
+		// Advantages
+		.w-advantages
+			padding-top: 75px
+			&__title
+				text-align: center
+			&__item
+				height: auto
+			&__number
+				// right: 5px
+				bottom: 10px
+				font-size: 46px
 
 @media only screen and (max-width: 425px)
 	// Modal
@@ -217,6 +262,20 @@
 	.cta
 		&__title
 			font-size: 28px
+	// PAGE WEDDING CUSTOMIZE
+	body.page-wedding
+		// Advantages
+		.w-advantages
+			padding-bottom: 75px
+		// Section: Services
+		.w-services
+			margin-top: 0
+			padding-bottom: 75px
+			&:before
+				top: -40px
+				border-bottom-width: 40px
+			&__wrap
+				margin-top: 50px
 
 @media only screen and (max-width: 375px)
 	// Section: Steps

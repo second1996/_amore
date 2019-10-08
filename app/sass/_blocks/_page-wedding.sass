@@ -1,0 +1,114 @@
+$accent: #d2b5b6
+
+body.page-wedding
+	::selection
+		background-color: $accent
+	// Start Main customize
+	.btn-primary
+		border-color: $accent
+		color: $accent
+		&:before
+			background: $accent
+		&:hover
+			color: $white
+	.header__menu-title:hover,
+	.header.header-light .header__menu .header__menu-title:hover,
+	.header__callback .callback__phone > a:hover,
+	.header.header-light .header__callback .callback__phone > a:hover
+		color: $accent
+	.header__menu-icon > span
+		background: $accent
+	.header__callback .callback__icon .icon
+		fill: $accent
+	.heroes
+		height: 700px
+		margin-bottom: 0
+		&__title
+			color: $accent
+	.cta__body
+		background: rgba(#f7e7e8, 0.7)
+	// End Main customize
+	
+	// PAGE WEDDING CUSTOMIZE
+	// Section: Advantages
+	.w-advantages
+		padding: 7vw 0
+		background: #f6f6f6
+		&__main-item
+			margin-bottom: 30px
+		&__title
+			font-size: 19px
+			font-weight: 300
+			line-height: 1.25
+			> span
+				display: block
+				margin-bottom: 12px
+				color: $accent
+				font-size: 52px
+				font-weight: 700
+				line-height: 1
+		&__item
+			position: relative
+			height: 152px
+			margin-bottom: 30px
+			padding: 30px
+			box-shadow: 0 5px 5px rgba(0,0,0, 0.025)
+			background: $white
+		&__text
+			margin-bottom: 0
+			font-size: 18px
+			font-weight: 300
+		&__number
+			position: absolute
+			right: 15px
+			bottom: 10px
+			color: $accent
+			font-size: 60px
+			font-weight: 300
+			line-height: 1
+			opacity: 0.25
+			user-select: none
+
+	// Section: Services
+	.w-services
+		position: relative
+		margin-top: 75px
+		padding-bottom: 120px
+		&:before
+			content: ''
+			position: absolute
+			top: -140px
+			left: 0
+			right: 0
+			display: block
+			width: 0
+			height: 0
+			border-bottom: 140px solid $trsp
+			border-left: 100vw solid #f6f6f6
+			background: $white
+		.background-text
+			z-index: 0
+			top: 60px
+			color: #f6f6f6
+		.container
+			position: relative
+			margin-top: 40px
+		&__wrap
+			margin-top: 100px
+		[class*="col-"]
+			margin-bottom: 30px
+		&__item
+			height: 100%
+			padding: 45px 30px 40px
+			border: 1px solid $border
+			background: $white
+			text-align: center
+		&__icon
+			margin-bottom: 20px
+			.icon
+				fill: $accent
+				font-size: 60px
+		&__text
+			margin-bottom: 0
+			font-weight: 300
+			line-height: 1.35
