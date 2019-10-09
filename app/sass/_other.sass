@@ -9,19 +9,26 @@
 	left: 0
 	right: 0
 	z-index: -1
-	margin-right: -6.9vw
+	// margin-right: -6.9vw
 	color: #f5f5f5
 	font-size: 12.5vw
 	font-weight: 800
 	line-height: 0.95
-	letter-spacing: 6.9vw
+	// letter-spacing: 6.9vw
 	text-align: center
 	text-transform: uppercase
 	user-select: none
+	> span
+		display: inline-block
+		margin-right: 3.5vw
+		&:last-child
+			margin-right: 0
 	&_smaller
-		margin-left: -4vw
+		// margin-left: -4vw
 		font-size: 10.45vw
-		letter-spacing: 4vw
+		> span
+			margin-right: 1vw
+		// letter-spacing: 4vw
 
 .section-title
 	color: $text

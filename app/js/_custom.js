@@ -13,17 +13,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 jQuery(function() {
 
+	// Wow.js init
+	new WOW().init();
+
 	// Service Modal init
 	$('#serviceModal').on('show.bs.modal', function (event) {
 		var link = $(event.relatedTarget) // Button that triggered the modal
 		var sContent = link.data('content') // Extract info from data-* attributes
 		var sTitle = link.data('title') // Extract info from data-* attributes
-		// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-		// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
 		var modal = $(this)
 		modal.find('.modal-title').text(sTitle)
 		modal.find('.modal-body').html(sContent)
-		// return false;
+		return false;
 	})
 
 	// Anchors Links
@@ -42,6 +43,7 @@ jQuery(function() {
 	$hPhone = $('.callback__icon');
 	$hPhoneNum = $('.callback__phone');
 	$mNav = $('.mobile-nav');
+	$mNavAnchor = $('[data-link="anchor"]');
 	$mNavClose = $('.mobile-nav__close');
 	$mNavOverlay = $('.mobile-nav__overlay');
 
@@ -49,6 +51,12 @@ jQuery(function() {
 	$hMenu.on('click', function() {
 		$mNav.addClass('is-active');
 		$mNavOverlay.addClass('is-active');
+	});
+
+	// Close menu after click on link anchor
+	$mNavAnchor.on('click', function() {
+		$mNav.removeClass('is-active');
+		$mNavOverlay.removeClass('is-active');
 	});
 
 	// Close button
@@ -123,12 +131,11 @@ jQuery(function() {
 		}
 	});
 
-	// Gallery Mixitup
-	$('.gallery')
-
 	// Wedding Gallery Masonry
-	$('.w-gallery__grid').masonry({
-		itemSelector: '.w-gallery__grid-item'
+	$(document).ready(function() {
+		$('.w-gallery__grid').masonry({
+			itemSelector: '.w-gallery__grid-item'
+		});
 	});
 
 });
