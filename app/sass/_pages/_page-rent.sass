@@ -1,0 +1,95 @@
+@import "vars"
+
+body.page-rent
+	// Start Main customize
+	.header__menu-title,
+	.header__callback .callback__phone > a
+		color: $text
+	.header__callback .callback__phone > a:hover
+		color: $light-accent
+	.header__logo-dark
+		display: inline-block
+	.header__logo-light
+		display: none
+	// End Main customize
+	
+	.catalog
+		&-header
+			padding: 6vh 0
+			background: #fff5e9
+			h2
+				margin-bottom: 0
+				color: $text
+				font-family: 'Merriweather', serif
+				font-size: 32px
+				font-weight: 300
+				text-align: center
+		&__item
+			position: relative
+			overflow: hidden
+			margin-top: 30px
+			&:hover
+				.catalog__photo
+					transform: scale(1.1)
+		&__photo
+			position: relative
+			overflow: hidden
+			width: 350px
+			height: 300px
+			transform: scale(1)
+			transition: transform 0.35s ease
+			> img
+				position: absolute
+				top: 50%
+				left: 50%
+				display: block
+				width: 100%
+				height: 100%
+				object-fit: cover
+				transform: translate(-50%, -50%)
+		&__lables
+			position: absolute
+			top: 20px
+			left: 20px
+			display: flex
+			flex-direction: column
+			height: 300px
+			> .lable
+				display: inline-block
+				margin-bottom: 6px
+				padding: 8px
+				background: rgba($white, 0.9)
+				font-size: 14px
+				line-height: 1
+				&_gallery
+					margin-bottom: 40px
+					margin-top: auto
+					background: rgba(0,0,0, 0.8)
+					color: $white
+		&__meta
+			position: relative
+			z-index: 1
+			padding: 30px
+			border: 1px solid $border
+			border-top: 0
+			background: $white
+		&__title
+			font-size: 18px
+			font-weight: 600
+		&__descr
+			margin-bottom: 30px
+			font-size: 14px
+			font-weight: 300
+		&__order
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__price
+			color: $accent
+			font-size: 20px
+			font-weight: 600
+			> small
+				font-size: 14px
+				font-weight: 500
+		&__btn
+			padding: 16px 30px
