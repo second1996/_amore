@@ -1,6 +1,6 @@
 @import "vars"
 
-body.page-rent
+body.page-catalog
 	// Start Main customize
 	.header__menu-title,
 	.header__callback .callback__phone > a
@@ -15,6 +15,7 @@ body.page-rent
 	
 	.catalog
 		&-header
+			margin-bottom: 30px
 			padding: 6vh 0
 			background: #fff5e9
 			h2
@@ -25,18 +26,25 @@ body.page-rent
 				font-weight: 300
 				text-align: center
 		&__item
+			float: left
+			width: 33.333%
+			padding: 15px
+		&__inner
 			position: relative
 			overflow: hidden
-			margin-top: 30px
 			&:hover
 				.catalog__photo
 					transform: scale(1.1)
+				.catalog__lables
+					visibility: visible
+					opacity: 1
+					transform: translateY(0)
 		&__photo
 			position: relative
 			overflow: hidden
-			width: 350px
+			width: 100%
 			height: 300px
-			transform: scale(1)
+			transform: scale(1.01)
 			transition: transform 0.35s ease
 			> img
 				position: absolute
@@ -54,18 +62,39 @@ body.page-rent
 			display: flex
 			flex-direction: column
 			height: 300px
+			visibility: hidden
+			opacity: 0
+			transform: translateY(-10px)
+			transition: $trs-all
 			> .lable
 				display: inline-block
 				margin-bottom: 6px
-				padding: 8px
-				background: rgba($white, 0.9)
+				padding: 8px 11px
+				border-radius: 2px
+				background: rgba($white, 0.95)
 				font-size: 14px
 				line-height: 1
 				&_gallery
+					display: flex
+					align-items: center
 					margin-bottom: 40px
 					margin-top: auto
-					background: rgba(0,0,0, 0.8)
+					background: rgba(0,0,0, 0.75)
 					color: $white
+					&:hover
+						background: rgba(0,0,0, 1)
+						.icon
+							fill: $light-accent
+					.icon
+						margin-right: 10px
+						font-size: 17px
+						fill: $white
+						transition: fill 0.35s ease
+					> span
+						display: inline-block
+						margin-top: 1px
+					&-hide
+						display: none
 		&__meta
 			position: relative
 			z-index: 1

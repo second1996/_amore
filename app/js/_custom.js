@@ -24,8 +24,17 @@ jQuery(function() {
 		var modal = $(this)
 		modal.find('.modal-title').text(sTitle)
 		modal.find('.modal-body').html(sContent)
-		return false;
-	})
+		// return false;
+	});
+
+	// Order Modal init
+	$('#orderModal').on('show.bs.modal', function (event) {
+		var orderLink = $(event.relatedTarget) // Button that triggered the modal
+		var orderTitle = orderLink.data('title') // Extract info from data-* attributes
+		var modal = $(this)
+		modal.find('.modal-title').html('Замовити <b>' + orderTitle + '</b>')
+		// return false;
+	});
 
 	// Anchors Links
 	$('a[data-link^="anchor"]').bind('click.smoothscroll', function(){
@@ -135,6 +144,9 @@ jQuery(function() {
 	$(document).ready(function() {
 		$('.w-gallery__grid').masonry({
 			itemSelector: '.w-gallery__grid-item'
+		});
+		$('.catalog__grid').masonry({
+			itemSelector: '.catalog__item'
 		});
 	});
 
