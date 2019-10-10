@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8">
+
+	<title>Amore – Event agency</title>
+	<meta name="description" content="Amore – Event agency">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="img/favicon.png">
+	<meta property="og:image" content="img/@1x/preview.jpg">
+	
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col">
+					<div class="header__menu">
+						<div class="header__menu-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="header__menu-title">Меню</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="header__logo">
+						<a href="" title="Головна сторінка Amore">
+							<img class="header__logo-light" src="img/logo.png" alt="Amore – Event agency">
+							<img class="header__logo-dark" src="img/logo-dark.png" alt="Amore – Event agency">
+						</a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="header__callback callback">
+						<div class="callback__icon">
+							<svg class="icon icon-phone-call"><use xlink:href="img/icons/sprite.svg#icon-phone-call"></use></svg>
+						</div>
+						<div class="callback__phone">
+							<a href="tel:" title="Зателефонувати за цим номером">+38 (095) 90 60 321</a>
+							<a href="tel:" title="Зателефонувати за цим номером">+38 (066) 02 75 820</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Section: Heroes -->
+	<section class="heroes">
+		<div class="heroes__inner">
+			<div class="container">
+				<p class="heroes__suptitle">Бажаєш свято як в кращих фільмах? – Тобі до нас!</p>
+				<h1 class="heroes__title">Ми зробимо більше, <span>ніж ви очікуєте!</span></h1>
+				<button data-toggle="modal" data-target="#callback-modal" class="heroes__btn btn btn-primary">Залишити заявку</button>
+			</div>
+		</div>
+		<div class="heroes__footer links">
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-auto">
+						<a href="mailto:amore.agency@gmail.com" class="links__email">
+							<svg class="icon icon-email"><use xlink:href="img/icons/sprite.svg#icon-email"></use></svg>
+							amore.agency@gmail.com
+						</a>
+					</div>
+					<div class="col-auto">
+						<div class="links__social">
+							<a href="https://facebook.com/"><svg class="icon icon-facebook"><use xlink:href="img/icons/sprite.svg#icon-facebook"></use></svg></a>
+							<a href="https://instagram.com/"><svg class="icon icon-instagram"><use xlink:href="img/icons/sprite.svg#icon-instagram"></use></svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="heroes__video">
+			<video autoplay playsinline muted preload loop id="heroesVideo">
+				<source src="https://love-and-dress.com.ua/wp-content/uploads/2019/05/video-home.mp4" type="video/mp4">
+			</video>
+		</div>
+	</section>
+
+	<!-- Section: About us -->
+	<section class="about-us section" id="about-us">
+		<div class="background-text">
+			<span class="wow animated fadeInDown" data-wow-delay="0s">A</span>
+			<span class="wow animated fadeInDown" data-wow-delay="0.25s">b</span>
+			<span class="wow animated fadeInDown" data-wow-delay="0.5s">o</span>
+			<span class="wow animated fadeInDown" data-wow-delay="0.75s">u</span>
+			<span class="wow animated fadeInDown" data-wow-delay="1s">t</span>
+		</div>
+		<div class="container">
+			<div class="row about-us__wrap">
+				<div class="col-lg col-12 order-lg-0 order-1">
+					<h2 class="about-us__title">Бажаєш свято як в кращих фільмах — <span class="accent-text">тобі до нас!</span></h2>
+					<div class="about-us__text">
+						<p>Amore є для нас не просто назвою – це те, на чому базується уся наша робота. Ми любимо наших клієнтів, справу, яку ми робимо і наші проекти. Головна наша мета - закохати вас в нашу агенцію та свято, яке ми для вас організуємо. І як показує досвід, нам це вдається з першого погляду.</p>
+						<p>Поки ви будете насолоджуватись коханням, ми швидко, відповідально і якісно втілимо усі ваші мрії в ідеальне свято. Ми гарантуємо, що зробимо все якнайкраще, адже Amore існує для  того, щоб дарувати вам щастя.</p>
+					</div>
+					<a href="#services" data-link="anchor" class="about-us__btn btn">Наші послуги</a>
+				</div>
+				<div class="col-lg-auto col-12 order-lg-1 order-0">
+					<div class="about-us__photo photo">
+						<div class="photo__image">
+							<img src="img/@2x/about-us-photo.jpg" alt="">
+						</div>
+						<div class="photo__text"><b>Amore</b> event agency</div>
+						<div class="photo__body"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section: Advantages -->
+	<section class="advantages section" id="advantages">
+		<div class="container">
+			<div class="row">
+				<!-- Start item -->
+				<div class="col-md-4 col-6">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<svg class="icon icon-diamond"><use xlink:href="img/icons/sprite.svg#icon-diamond"></use></svg>
+						</div>
+						<h4 class="advantages__title">Досвід і професіоналізм команди</h4>
+						<div class="advantages__bg-icon">
+							<svg class="icon icon-diamond"><use xlink:href="img/icons/sprite.svg#icon-diamond"></use></svg>
+						</div>
+					</div>
+				</div>
+				<!-- Start item -->
+				<div class="col-md-4 col-6">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<svg class="icon icon-mask"><use xlink:href="img/icons/sprite.svg#icon-mask"></use></svg>
+						</div>
+						<h4 class="advantages__title">Сучасний погляд на свята</h4>
+						<div class="advantages__bg-icon">
+							<svg class="icon icon-mask"><use xlink:href="img/icons/sprite.svg#icon-mask"></use></svg>
+						</div>
+					</div>
+				</div>
+				<!-- Start item -->
+				<div class="col-md-4 col-6">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<svg class="icon icon-book"><use xlink:href="img/icons/sprite.svg#icon-book"></use></svg>
+						</div>
+						<h4 class="advantages__title">Індивідуальний підхід до кожного клієнта</h4>
+						<div class="advantages__bg-icon">
+							<svg class="icon icon-book"><use xlink:href="img/icons/sprite.svg#icon-book"></use></svg>
+						</div>
+					</div>
+				</div>
+				<!-- Start item -->
+				<div class="col-md-4 col-6">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<svg class="icon icon-ribbon"><use xlink:href="img/icons/sprite.svg#icon-ribbon"></use></svg>
+						</div>
+						<h4 class="advantages__title">Увага до найменших деталей</h4>
+						<div class="advantages__bg-icon">
+							<svg class="icon icon-ribbon"><use xlink:href="img/icons/sprite.svg#icon-ribbon"></use></svg>
+						</div>
+					</div>
+				</div>
+				<!-- Start item -->
+				<div class="col-md-4 col-6">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<svg class="icon icon-bell"><use xlink:href="img/icons/sprite.svg#icon-bell"></use></svg>
+						</div>
+						<h4 class="advantages__title">Швидкість та своєчасність</h4>
+						<div class="advantages__bg-icon">
+							<svg class="icon icon-bell"><use xlink:href="img/icons/sprite.svg#icon-bell"></use></svg>
+						</div>
+					</div>
+				</div>
+				<!-- Start item -->
+				<div class="col-md-4 col-6">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<svg class="icon icon-notepad"><use xlink:href="img/icons/sprite.svg#icon-notepad"></use></svg>
+						</div>
+						<h4 class="advantages__title">Повна координація заходів</h4>
+						<div class="advantages__bg-icon">
+							<svg class="icon icon-notepad"><use xlink:href="img/icons/sprite.svg#icon-notepad"></use></svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section: Services -->
+	<section class="services section" id="services">
+		<div class="background-text background-text_smaller">
+			<span class="wow animated fadeInDown" data-wow-delay="0s">S</span>
+			<span class="wow animated fadeInDown" data-wow-delay="0.2s">e</span>
+			<span class="wow animated fadeInDown" data-wow-delay="0.4s">r</span>
+			<span class="wow animated fadeInDown" data-wow-delay="0.6s">v</span>
+			<span class="wow animated fadeInDown" data-wow-delay="0.8s">i</span>
+			<span class="wow animated fadeInDown" data-wow-delay="1s">c</span>
+			<span class="wow animated fadeInDown" data-wow-delay="1.2s">e</span>
+			<span class="wow animated fadeInDown" data-wow-delay="1.4s">s</span>
+		</div>
+		<div class="container">
+			<h2 class="section-title">Наші послуги</h2>
+			<div class="row services__wrap">
+				<!-- Start item -->
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="services__item">
+						<div class="services__photo"><img src="img/@2x/services-photo-01.jpg" alt="Організація весіль"></div>
+						<div class="services__meta">
+							<h3 class="services__title">Організація весіль</h3>
+							<p class="services__descr">Весілля як у кіно чи класична церемонія?</p>
+							<a href="page-wedding.html" class="services__link">Детальніше</a>
+						</div>
+					</div>
+				</div>
+				<!-- Start item -->
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="services__item">
+						<div class="services__photo"><img src="img/@1x/services-photo-02.jpg" alt="Дні народження"></div>
+						<div class="services__meta">
+							<h3 class="services__title">Дні народження</h3>
+							<p class="services__descr">Як зробити день народження незабутнім?</p>
+							<div class="services__link" data-toggle="modal" data-target="#serviceModal" data-title="Дні народження" data-content='<font color="red">sad</font>'>Детальніше</div>
+						</div>
+					</div>
+				</div>
+				<!-- Start item -->
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="services__item">
+						<div class="services__photo"><img src="img/@2x/services-photo-03.jpg" alt="Тімбілдинг & Корпоратив"></div>
+						<div class="services__meta">
+							<h3 class="services__title">Тімбілдинг & Корпоратив</h3>
+							<p class="services__descr">Корпоративна вечірка? Це може здаватись важкою задачею, але не для нас.</p>
+							<div class="services__link" data-toggle="modal" data-target="#serviceModal" data-title="Тімбілдинг & Корпоратив" data-content="<font color='red'>sad</font>">Детальніше</div>
+						</div>
+					</div>
+				</div>
+				<!-- Start item -->
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="services__item">
+						<div class="services__photo"><img src="img/@2x/services-photo-04.jpg" alt="Тематичні вечірки"></div>
+						<div class="services__meta">
+							<h3 class="services__title">Тематичні вечірки</h3>
+							<p class="services__descr">Весілля як у кіно чи класична церемонія?</p>
+							<div class="services__link" data-toggle="modal" data-target="#serviceModal" data-title="Тематичні вечірки" data-content="<font color='red'>sad</font>">Детальніше</div>
+						</div>
+					</div>
+				</div>
+				<!-- Start item -->
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="services__item">
+						<div class="services__photo"><img src="img/@2x/services-photo-05.jpg" alt="Бізнес-події"></div>
+						<div class="services__meta">
+							<h3 class="services__title">Бізнес-події</h3>
+							<p class="services__descr">Плануєте бізнес-подію? Ми вам допоможемо.</p>
+							<div class="services__link" data-toggle="modal" data-target="#serviceModal" data-title="Бізнес-події" data-content="<font color='red'>sad</font>">Детальніше</div>
+						</div>
+					</div>
+				</div>
+				<!-- Start item -->
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="services__item">
+						<div class="services__photo"><img src="img/@2x/services-photo-06.jpg" alt="Конференції"></div>
+						<div class="services__meta">
+							<h3 class="services__title">Конференції</h3>
+							<p class="services__descr">Як організувати конференцію на високому рівні?</p>
+							<div class="services__link" data-toggle="modal" data-target="#serviceModal" data-title="Конференції" data-content="<font color='red'>sad</font>">Детальніше</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section: Call to action -->
+	<section class="cta cta_gray">
+		<div class="container">
+			<h5 class="cta__title">Реалізуємо вашу ідею <br><b>в неповторну подію</b></h5>
+			<div class="cta__btn">
+				<button data-toggle="modal" data-target="#callback-modal" class="btn">Залишити заявку</button>
+			</div>
+		</div>
+		<div class="cta__body ltr"></div>
+	</section>
+
+	<!-- Section: Steps -->
+	<section class="steps section">
+		<div class="background-text">
+			<span class="wow animated fadeInDown" data-wow-delay="0s">S</span>
+			<span class="wow animated fadeInDown" data-wow-delay="0.25s">t</span>
+			<span class="wow animated fadeInDown" data-wow-delay="0.5s">e</span>
+			<span class="wow animated fadeInDown" data-wow-delay="0.75s">p</span>
+			<span class="wow animated fadeInDown" data-wow-delay="1s">s</span>
+		</div>
+		<div class="container">
+			<h2 class="section-title">Як ми працюємо</h2>
+			<div class="row steps__wrap">
+				<div class="col-md-3 col-6">
+					<div class="steps__item">
+						<div class="steps__icon">
+							<svg class="icon icon-meeting"><use xlink:href="img/icons/sprite.svg#icon-meeting"></use></svg>
+						</div>
+						<p class="steps__title">Знайомство</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="steps__item">
+						<div class="steps__icon">
+							<svg class="icon icon-wishlist"><use xlink:href="img/icons/sprite.svg#icon-wishlist"></use></svg>
+						</div>
+						<p class="steps__title">Вибір концепції</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="steps__item">
+						<div class="steps__icon">
+							<svg class="icon icon-signature"><use xlink:href="img/icons/sprite.svg#icon-signature"></use></svg>
+						</div>
+						<p class="steps__title">Договір</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="steps__item">
+						<div class="steps__icon">
+							<svg class="icon icon-fireworks"><use xlink:href="img/icons/sprite.svg#icon-fireworks"></use></svg>
+						</div>
+						<p class="steps__title">Подія мрії</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section: Gallery -->
+	<section class="gallery section" id="gallery">
+		<div class="container">
+			<h2 class="section-title">Фотогалерея</h2>
+			<div class="gallery__wrap">
+				<div class="gallery__tabs">
+					<button type="button" data-filter=".category-1">Весілля</button>
+					<button type="button" data-filter=".category-2">День народження</button>
+					<button type="button" data-filter=".category-3">Корпоративи</button>
+					<button type="button" data-filter=".category-4">Тімбілдинг</button>
+					<button type="button" data-filter=".category-5">Бізнес-події</button>
+					<button type="button" data-filter=".category-6">Конференції</button>
+				</div>
+				<div class="gallery__container">
+					<div class="mix category-1" data-order="1">
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-6">
+								<div class="gallery__item">
+									<a data-fancybox="1" href="img/@2x/services-photo-01.jpg">
+										<div class="gallery__overlay">
+											<div class="gallery__overlay-icon">
+												<svg class="icon icon-zoom"><use xlink:href="img/icons/sprite.svg#icon-zoom"></use></svg>
+											</div>
+											<p class="gallery__overlay-text">Переглянути фото</p>
+										</div>
+										<div class="gallery__photo">
+											<img src="img/@2x/services-photo-01.jpg">
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-6">
+								<div class="gallery__item">
+									<a data-fancybox="1" href="https://scontent.fiev21-2.fna.fbcdn.net/v/t1.0-9/69803307_963310184018805_3897695770446397440_n.jpg?_nc_cat=100&_nc_oc=AQnggImOc2lI4fVTTVTmURLjZXCc_v0KSENqxP7Sg8SVOeNqGEAO10PUdTlFywrILMg&_nc_ht=scontent.fiev21-2.fna&oh=4133d2d9422923189ea6ad667387c672&oe=5E2854D9">
+										<div class="gallery__overlay">
+											<div class="gallery__overlay-icon">
+												<svg class="icon icon-zoom"><use xlink:href="img/icons/sprite.svg#icon-zoom"></use></svg>
+											</div>
+											<p class="gallery__overlay-text">Переглянути фото</p>
+										</div>
+										<div class="gallery__photo">
+											<img src="https://scontent.fiev21-2.fna.fbcdn.net/v/t1.0-9/69803307_963310184018805_3897695770446397440_n.jpg?_nc_cat=100&_nc_oc=AQnggImOc2lI4fVTTVTmURLjZXCc_v0KSENqxP7Sg8SVOeNqGEAO10PUdTlFywrILMg&_nc_ht=scontent.fiev21-2.fna&oh=4133d2d9422923189ea6ad667387c672&oe=5E2854D9">
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-6">
+								<div class="gallery__item">
+									<a data-fancybox="1" href="https://scontent.fiev21-1.fna.fbcdn.net/v/t1.0-9/70580716_963310190685471_8940606697349578752_n.jpg?_nc_cat=105&_nc_oc=AQlaTbBovbbE76rFFPRG_9Fn-EcKdjhwEG02B4P5R8dFgC1ZisBDTz8iRtAzE1cd5Do&_nc_ht=scontent.fiev21-1.fna&oh=c79d073290a9caa9811329bb227046e9&oe=5DF9BB06">
+										<div class="gallery__overlay">
+											<div class="gallery__overlay-icon">
+												<svg class="icon icon-zoom"><use xlink:href="img/icons/sprite.svg#icon-zoom"></use></svg>
+											</div>
+											<p class="gallery__overlay-text">Переглянути фото</p>
+										</div>
+										<div class="gallery__photo">
+											<img src="https://scontent.fiev21-1.fna.fbcdn.net/v/t1.0-9/70580716_963310190685471_8940606697349578752_n.jpg?_nc_cat=105&_nc_oc=AQlaTbBovbbE76rFFPRG_9Fn-EcKdjhwEG02B4P5R8dFgC1ZisBDTz8iRtAzE1cd5Do&_nc_ht=scontent.fiev21-1.fna&oh=c79d073290a9caa9811329bb227046e9&oe=5DF9BB06">
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-6">
+								<div class="gallery__item">
+									<a data-fancybox="1" href="https://scontent.fiev21-1.fna.fbcdn.net/v/t1.0-9/70504683_963310240685466_1703688100393254912_n.jpg?_nc_cat=110&_nc_oc=AQlCxtQckVNeEqAO9aRNEKGJUIuImK1s8-kuQvWKWoFwCUn_7Xi4H_QnMQKAXOsOcJg&_nc_ht=scontent.fiev21-1.fna&oh=dd9922e309d19970d368e80b8c6c339a&oe=5E3D56AC">
+										<div class="gallery__overlay">
+											<div class="gallery__overlay-icon">
+												<svg class="icon icon-zoom"><use xlink:href="img/icons/sprite.svg#icon-zoom"></use></svg>
+											</div>
+											<p class="gallery__overlay-text">Переглянути фото</p>
+										</div>
+										<div class="gallery__photo">
+											<img src="https://scontent.fiev21-1.fna.fbcdn.net/v/t1.0-9/70504683_963310240685466_1703688100393254912_n.jpg?_nc_cat=110&_nc_oc=AQlCxtQckVNeEqAO9aRNEKGJUIuImK1s8-kuQvWKWoFwCUn_7Xi4H_QnMQKAXOsOcJg&_nc_ht=scontent.fiev21-1.fna&oh=dd9922e309d19970d368e80b8c6c339a&oe=5E3D56AC">
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-6">
+								<div class="gallery__item">
+									<a data-fancybox="1" href="https://scontent.fiev21-2.fna.fbcdn.net/v/t1.0-9/70923592_963310297352127_6561708467684376576_n.jpg?_nc_cat=102&_nc_oc=AQlhkSaomUAUEqq5EcZ9raH1hQ15MM2EoxHfFqLfFiIUcTZC-Z1VWG3lQUQ-MUGtxIo&_nc_ht=scontent.fiev21-2.fna&oh=3ff430e578e29367f8a20ec334b90a9e&oe=5E3B3CFD">
+										<div class="gallery__overlay">
+											<div class="gallery__overlay-icon">
+												<svg class="icon icon-zoom"><use xlink:href="img/icons/sprite.svg#icon-zoom"></use></svg>
+											</div>
+											<p class="gallery__overlay-text">Переглянути фото</p>
+										</div>
+										<div class="gallery__photo">
+											<img src="https://scontent.fiev21-2.fna.fbcdn.net/v/t1.0-9/70923592_963310297352127_6561708467684376576_n.jpg?_nc_cat=102&_nc_oc=AQlhkSaomUAUEqq5EcZ9raH1hQ15MM2EoxHfFqLfFiIUcTZC-Z1VWG3lQUQ-MUGtxIo&_nc_ht=scontent.fiev21-2.fna&oh=3ff430e578e29367f8a20ec334b90a9e&oe=5E3B3CFD">
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-6">
+								<div class="gallery__item">
+									<a data-fancybox="1" href="https://scontent.fiev21-1.fna.fbcdn.net/v/t1.0-9/70623266_963310347352122_7457531164073394176_n.jpg?_nc_cat=109&_nc_oc=AQlhwHcwf5FtN6eFVA3qN8q36VrT7M2HShGKlNeEBfdt4vk4b1sEXrwsS_XkkM0U8lo&_nc_ht=scontent.fiev21-1.fna&oh=96fb476a8bf60b6ccb92299d0527be3d&oe=5E2E1DAF">
+										<div class="gallery__overlay">
+											<div class="gallery__overlay-icon">
+												<svg class="icon icon-zoom"><use xlink:href="img/icons/sprite.svg#icon-zoom"></use></svg>
+											</div>
+											<p class="gallery__overlay-text">Переглянути фото</p>
+										</div>
+										<div class="gallery__photo">
+											<img src="https://scontent.fiev21-1.fna.fbcdn.net/v/t1.0-9/70623266_963310347352122_7457531164073394176_n.jpg?_nc_cat=109&_nc_oc=AQlhwHcwf5FtN6eFVA3qN8q36VrT7M2HShGKlNeEBfdt4vk4b1sEXrwsS_XkkM0U8lo&_nc_ht=scontent.fiev21-1.fna&oh=96fb476a8bf60b6ccb92299d0527be3d&oe=5E2E1DAF">
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-6">
+								<div class="gallery__item">
+									<a data-fancybox="1" href="https://scontent.fiev21-2.fna.fbcdn.net/v/t1.0-9/67288927_929210774095413_1230384332166660096_n.jpg?_nc_cat=106&_nc_oc=AQlhcf2u12mBDaPFMso7U_rSvQCG-rAx9YehDG7sJVyBkuFVET-rTcUyqYziKYbuVoQ&_nc_ht=scontent.fiev21-2.fna&oh=c8b441560338ec41fa69968dc708fe66&oe=5DF9DDF9">
+										<div class="gallery__overlay">
+											<div class="gallery__overlay-icon">
+												<svg class="icon icon-zoom"><use xlink:href="img/icons/sprite.svg#icon-zoom"></use></svg>
+											</div>
+											<p class="gallery__overlay-text">Переглянути фото</p>
+										</div>
+										<div class="gallery__photo">
+											<img src="https://scontent.fiev21-2.fna.fbcdn.net/v/t1.0-9/67288927_929210774095413_1230384332166660096_n.jpg?_nc_cat=106&_nc_oc=AQlhcf2u12mBDaPFMso7U_rSvQCG-rAx9YehDG7sJVyBkuFVET-rTcUyqYziKYbuVoQ&_nc_ht=scontent.fiev21-2.fna&oh=c8b441560338ec41fa69968dc708fe66&oe=5DF9DDF9">
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-4 col-6">
+								<div class="gallery__item">
+									<a data-fancybox="1" href="https://scontent.fiev21-1.fna.fbcdn.net/v/t1.0-9/67152551_929210760762081_2534347510017687552_n.jpg?_nc_cat=109&_nc_oc=AQmEu16mFJ569kJPLBqis_tyJXZ0ov-XL8Wox4kMIPRh-D11hK-5fYyaYmXaIp5y6J4&_nc_ht=scontent.fiev21-1.fna&oh=005d61f200d440d3a13afbabcaf30d08&oe=5DF86752">
+										<div class="gallery__overlay">
+											<div class="gallery__overlay-icon">
+												<svg class="icon icon-zoom"><use xlink:href="img/icons/sprite.svg#icon-zoom"></use></svg>
+											</div>
+											<p class="gallery__overlay-text">Переглянути фото</p>
+										</div>
+										<div class="gallery__photo">
+											<img src="https://scontent.fiev21-1.fna.fbcdn.net/v/t1.0-9/67152551_929210760762081_2534347510017687552_n.jpg?_nc_cat=109&_nc_oc=AQmEu16mFJ569kJPLBqis_tyJXZ0ov-XL8Wox4kMIPRh-D11hK-5fYyaYmXaIp5y6J4&_nc_ht=scontent.fiev21-1.fna&oh=005d61f200d440d3a13afbabcaf30d08&oe=5DF86752">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix category-2" data-order="2">
+							<a data-fancybox="2" href="img/@2x/services-photo-03.jpg"><img src="img/@2x/services-photo-03.jpg"></a>
+					</div>
+					<div class="mix category-3" data-order="3">3</div>
+					<div class="mix category-4" data-order="4">4</div>
+					<div class="mix category-5" data-order="5">5</div>
+					<div class="mix category-6" data-order="6">6</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section: Call to action -->
+	<section class="cta">
+		<div class="container">
+			<h5 class="cta__title">Ми зробимо більше, <br><b>ніж ви очікуєте!</b></h5>
+			<div class="cta__btn">
+				<button data-toggle="modal" data-target="#callback-modal" class="btn">Залишити заявку</button>
+			</div>
+		</div>
+		<div class="cta__body rtl"></div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer section">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-sm col-12 order-sm-0 order-2">
+					<div class="footer__copyright">Amore 2019 &copy; Всі права захищені.</div>
+				</div>
+				<div class="col-sm col-12 order-sm-1 order-1">
+					<div class="footer__logo">
+						<img src="img/logo-dark.png" alt="Amore">
+					</div>
+				</div>
+				<div class="col-sm col-12 order-sm-2 order-0">
+					<div class="footer__social">
+						<span>Слідкуйте:</span>
+						<a href="https://facebook.com/"><svg class="icon icon-facebook"><use xlink:href="img/icons/sprite.svg#icon-facebook"></use></svg></a>
+						<a href="https://instagram.com/"><svg class="icon icon-instagram"><use xlink:href="img/icons/sprite.svg#icon-instagram"></use></svg></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+	
+	<!-- Mobile navigation -->
+	<div class="mobile-nav nav">
+		<div class="container">
+			<button class="mobile-nav__close">
+				<span></span>
+				<span></span>
+			</button>
+			<div class="row">
+				<div class="col-sm-6 col-12 nav__left">
+					<ul class="nav__list">
+						<li><a href="/" data-link="anchor">Головна</a></li>
+						<li><a href="#about-us" data-link="anchor">Про нас</a></li>
+						<li><a href="#advantages" data-link="anchor">Переваги</a></li>
+						<li><a href="#services" data-link="anchor">Послуги</a></li>
+						<li><a href="#gallery" data-link="anchor">Фотогалерея</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-12 nav__right">
+					<ul class="nav__list">
+						<li><a href="page-wedding.html">Організація весіль</a></li>
+						<li><a href="page-rent.html">Оренда декору</a></li>
+					</ul>
+					<ul class="nav__social">
+						<li>
+							<a href="https://facebook.com/">
+								<svg class="icon icon-facebook"><use xlink:href="img/icons/sprite.svg#icon-facebook"></use></svg>
+								<span>/amorewedding.com.ua</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://instagram.com/">
+								<svg class="icon icon-instagram"><use xlink:href="img/icons/sprite.svg#icon-instagram"></use></svg>
+								<span>/amorewed.agency</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-nav__overlay"></div>
+	</div>
+
+	<!-- Modal: Callback -->
+	<div class="modal fade" id="callback-modal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="callbackModalLabel">Залишити заявку</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="#" class="callback-form form">
+						<div class="form-group">
+							<input class="form-control" type="text" name="callback-name" id="callback-name" required>
+							<label for="callback-name">Ваше ім'я</label>
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="tel" name="callback-phone" id="callback-phone" required>
+							<label for="callback-phone">Номер телефону</label>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" name="callback-message" id="callback-message" rows="6" required></textarea>
+							<label for="callback-message">Коментар</label>
+						</div>
+						<button class="form-button btn" type="submit">Надіслати</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal: Service -->
+	<div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="serviceModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="serviceModalLabel">Послуга</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div id="recipient-name"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
