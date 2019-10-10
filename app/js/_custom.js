@@ -145,9 +145,6 @@ jQuery(function() {
 		$('.w-gallery__grid').masonry({
 			itemSelector: '.w-gallery__grid-item'
 		});
-		$('.catalog__grid').masonry({
-			itemSelector: '.catalog__item'
-		});
 	});
 
 });

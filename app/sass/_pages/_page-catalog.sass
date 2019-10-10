@@ -28,12 +28,12 @@ body.page-catalog
 		&__grid
 			margin-bottom: 30px
 		&__item
-			float: left
-			width: 33.333%
-			padding: 15px
-		&__inner
 			position: relative
 			overflow: hidden
+			margin-top: 30px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
 			&:hover
 				.catalog__photo
 					transform: scale(1.1)
@@ -108,6 +108,9 @@ body.page-catalog
 			font-size: 18px
 			font-weight: 600
 		&__descr
+			height: 84px
+			min-height: 84px
+			overflow-y: hidden
 			margin-bottom: 30px
 			font-size: 14px
 			font-weight: 300
@@ -123,4 +126,4 @@ body.page-catalog
 				font-size: 14px
 				font-weight: 500
 		&__btn
-			padding: 16px 30px
+			padding: 12px 30px
