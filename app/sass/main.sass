@@ -14,8 +14,6 @@ input, textarea
 	outline: none
 	&:focus:required:invalid
 		border-color: red
-	&:required:valid
-		border-color: green
 
 html
 	overflow-x: hidden
@@ -28,6 +26,7 @@ body
 	font-family: 'Raleway', sans-serif
 	font-size: 16px
 	line-height: 1.5
+	font-feature-settings: "lnum"
 	&.modal-open
 		padding-right: 0!important
 	&.compensate-for-scrollbar
@@ -40,6 +39,27 @@ body
 		text-decoration: none
 	p
 		font-weight: 400
+		b,
+		strong
+			font-weight: 600
+	ul.ul-list
+		list-style: none
+		margin: 0
+		padding: 0
+		> li
+			position: relative
+			padding-left: 18px
+			&:before
+				content: ''
+				position: absolute
+				top: 11px
+				left: 0
+				display: inline-block
+				width: 10px
+				height: 2px
+				vertical-align: middle
+				margin-right: 10px
+				background: $light-accent
 
 
 
@@ -57,12 +77,9 @@ body
 @import "_blocks/gallery"
 @import "_blocks/footer"
 @import "_blocks/mobile-nav"
-@import "_blocks/callback-form"
+@import "_blocks/modal"
 @import "_pages/page-wedding"
 @import "_pages/page-catalog"
-
-.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
-	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
 
 // Media queries
 @import "media"

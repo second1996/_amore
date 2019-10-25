@@ -1,6 +1,6 @@
 $accent: #d2b5b6
 
-body.page-wedding
+body.page-template-wedding
 	::selection
 		background-color: $accent
 	// Start Main customize
@@ -11,8 +11,8 @@ body.page-wedding
 			background: $accent
 		&:hover
 			color: $white
-	.header__menu-title:hover,
-	.header.header-light .header__menu .header__menu-title:hover,
+	.header__menu:hover .header__menu-title,
+	.header.header-light .header__menu:hover .header__menu-title,
 	.header__callback .callback__phone > a:hover,
 	.header.header-light .header__callback .callback__phone > a:hover
 		color: $accent
@@ -56,7 +56,7 @@ body.page-wedding
 			margin-bottom: 30px
 		&__title
 			font-size: 19px
-			font-weight: 300
+			font-weight: 400
 			line-height: 1.25
 			> span
 				display: block
@@ -75,16 +75,15 @@ body.page-wedding
 		&__text
 			margin-bottom: 0
 			font-size: 18px
-			font-weight: 300
 		&__number
 			position: absolute
 			right: 15px
 			bottom: 10px
 			color: $accent
-			font-size: 60px
+			font-size: 50px
 			font-weight: 300
 			line-height: 1
-			opacity: 0.25
+			opacity: 0.75
 			user-select: none
 
 	// Section: Services
@@ -128,7 +127,6 @@ body.page-wedding
 				font-size: 60px
 		&__text
 			margin-bottom: 0
-			font-weight: 300
 			line-height: 1.35
 
 	// Section: Gallery
@@ -203,3 +201,4 @@ body.page-wedding
 				display: block
 				max-width: 80%
 				height: auto
+				filter: grayscale(1)

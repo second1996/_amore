@@ -33,6 +33,7 @@ jQuery(function() {
 		var orderTitle = orderLink.data('title') // Extract info from data-* attributes
 		var modal = $(this)
 		modal.find('.modal-title').html('Замовити <b>' + orderTitle + '</b>')
+		modal.find('.order-name').val(orderTitle)
 		// return false;
 	});
 
