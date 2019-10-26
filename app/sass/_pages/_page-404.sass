@@ -1,0 +1,25 @@
+@import "vars"
+
+body.error404
+	// Start Main customize
+	.header__menu-title,
+	.header__callback .callback__phone > a
+		color: $text
+	.header__callback .callback__phone > a:hover
+		color: $light-accent
+	.header__logo-dark
+		display: inline-block
+	.header__logo-light
+		display: none
+	// End Main customize
+	
+	.page-404
+		padding: 75px 0
+		text-align: center
+		&__title
+			font-size: 32px
+			margin-bottom: 45px
+			> strong
+				display: block
+				font-size: 60px
+				font-weight: 800

@@ -183,6 +183,10 @@
 +media-breakpoint-down(xs)
 	.background-text
 		color: #f1f1f1
+	// Modal
+	.modal
+		&-title
+			font-size: 20px
 	// Mobile navigation
 	.mobile-nav
 		overflow-y: auto
@@ -252,6 +256,16 @@
 			padding-bottom: 75px
 		// Section: Partners
 		.w-partners
+	// PAGE 404 CUSTOMIZE
+	body.error404
+		.page-404
+			&__title
+				font-size: 24px
+	// PAGE THANK YOU CUSTOMIZE
+	body.page-template-thank-you
+		.page-thanks
+			&__title
+				font-size: 26px
 
 @media only screen and (max-width: 425px)
 	// Modal
@@ -310,6 +324,13 @@
 					padding: 5px
 
 @media only screen and (max-width: 375px)
+	// Modal
+	.modal
+		&-title
+			font-size: 18px
+	.form
+		&-button
+			padding: 15px 30px
 	// Section: Steps
 	.steps
 		&__item
