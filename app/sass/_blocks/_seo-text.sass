@@ -1,0 +1,23 @@
+.seo-text
+	position: relative
+	bottom: -75px
+	z-index: 1
+	margin-bottom: 75px
+	padding-top: 100px
+	padding-bottom: 100px
+	&__wrap
+		margin-top: 50px
+		> p
+			text-indent: 1.5em
+	&__body
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		z-index: -1
+		opacity: 0.1
+		&.rtl
+			transform: skewY(-3deg)
